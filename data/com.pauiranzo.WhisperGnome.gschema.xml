@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="com.pauiranzo.WhisperGnome" path="/com/pauiranzo/WhisperGnome/">
+    <key name="backend-command" type="s">
+      <default>'whisperx'</default>
+      <summary>Comando del backend</summary>
+      <description>Binario que ejecuta WhisperX.</description>
+    </key>
+    <key name="backend-extra-args" type="s">
+      <default>''</default>
+      <summary>Argumentos extra</summary>
+      <description>Argumentos adicionales para el backend.</description>
+    </key>
+    <key name="default-output-dir" type="s">
+      <default>''</default>
+      <summary>Directorio de salida</summary>
+      <description>Ruta por defecto para exportar transcripciones.</description>
+    </key>
+    <key name="language" type="s">
+      <default>'auto'</default>
+      <summary>Idioma</summary>
+      <description>Idioma de transcripción.</description>
+    </key>
+    <key name="model" type="s">
+      <default>'medium'</default>
+      <summary>Modelo</summary>
+      <description>Modelo WhisperX a utilizar.</description>
+    </key>
+    <key name="device" type="s">
+      <default>'auto'</default>
+      <summary>Dispositivo</summary>
+      <description>Dispositivo de cómputo para WhisperX.</description>
+    </key>
+    <key name="compute-type" type="s">
+      <default>'int8'</default>
+      <summary>Tipo de cómputo</summary>
+      <description>Tipo de precisión para el modelo.</description>
+    </key>
+    <key name="preprocess-ffmpeg" type="b">
+      <default>true</default>
+      <summary>Preprocesar con ffmpeg</summary>
+      <description>Usar ffmpeg para extraer audio.</description>
+    </key>
+    <key name="keep-temp-audio" type="b">
+      <default>false</default>
+      <summary>Mantener audio temporal</summary>
+      <description>Conservar archivos temporales de audio.</description>
+    </key>
+    <key name="diarize-enabled" type="b">
+      <default>false</default>
+      <summary>Habilitar diarización</summary>
+      <description>Activar diarización de hablantes.</description>
+    </key>
+    <key name="export-formats" type="s">
+      <default>'txt,srt,vtt,json'</default>
+      <summary>Formatos de exportación</summary>
+      <description>Lista de formatos separados por comas.</description>
+    </key>
+    <key name="last-open-dir" type="s">
+      <default>''</default>
+      <summary>Último directorio abierto</summary>
+      <description>Recuerda el directorio usado en el diálogo de archivos.</description>
+    </key>
+  </schema>
+</schemalist>

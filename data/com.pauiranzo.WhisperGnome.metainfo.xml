@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.pauiranzo.WhisperGnome</id>
+  <name>Whisper GNOME</name>
+  <summary>Transcribe audio y vídeo con WhisperX</summary>
+  <description>
+    <p>Aplicación GTK/libadwaita para gestionar transcripciones de audio y vídeo usando WhisperX.</p>
+  </description>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <provides>
+    <binary>whisper-gnome</binary>
+  </provides>
+</component>
