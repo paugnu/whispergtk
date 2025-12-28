@@ -52,7 +52,8 @@ class MainWindow(Adw.ApplicationWindow):
         return header
 
     def _build_layout(self) -> Gtk.Widget:
-        split = Adw.SplitView()
+        split = Gtk.Paned.new(Gtk.Orientation.HORIZONTAL)
+        split.set_wide_handle(True)
 
         sidebar = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, margin_top=12, margin_bottom=12, margin_start=12, margin_end=6, spacing=6)
         sidebar.append(Gtk.Label(label="Cola de trabajos", xalign=0))
@@ -65,9 +66,8 @@ class MainWindow(Adw.ApplicationWindow):
         self.status_label.set_wrap(True)
         content.append(self.status_label)
 
-        split.set_sidebar(sidebar)
-        split.set_content(content)
-        split.set_show_sidebar(True)
+        split.set_start_child(sidebar)
+        split.set_end_child(content)
         return split
 
     def _build_list_view(self) -> Gtk.Widget:
