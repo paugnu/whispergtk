@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Whisper GNOME
+Exec=whisper-gnome
+Icon=com.pauiranzo.WhisperGnome
+Categories=AudioVideo;Utility;
+StartupNotify=true
